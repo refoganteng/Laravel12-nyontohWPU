@@ -10,7 +10,7 @@
                         <x-navbar-link href="/" :active="request()->is('/')">Home</x-navbar-link>
                         <x-navbar-link href="/posts" :active="request()->is('posts')">Blog</x-navbar-link>
                         <x-navbar-link href="/about" :active="request()->is('about')">About</x-navbar-link>
-                        <x-navbar-link href="/contact" :active="request()->is('/contact')">Contact</x-navbar-link>
+                        <x-navbar-link href="/contact" :active="request()->is('contact')">Contact</x-navbar-link>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
             <x-navbar-link href="/" :active="request()->is('/')">Home</x-navbar-link>
             <x-navbar-link href="/posts" :active="request()->is('posts')">Blog</x-navbar-link>
             <x-navbar-link href="/about" :active="request()->is('about')">About</x-navbar-link>
-            <x-navbar-link href="/contact" :active="request()->is('/contact')">Contact</x-navbar-link>
+            <x-navbar-link href="/contact" :active="request()->is('contact')">Contact</x-navbar-link>
         </div>
         <div class="border-t border-white/10 pt-4 pb-3">
             <div class="flex items-center px-5">
