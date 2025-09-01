@@ -5,7 +5,7 @@
         <article class="bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition">
                 <h2 class="text-2xl font-bold text-white mb-3">{{ $post['title'] }}</h2>
             <div class="text-white">
-                <a href="#" class="text-white">{{ $post['author'] }}</a> | January 6th, 2025
+                <a href="#" class="text-white">{{ $post['author'] }}</a> | {{ $post->created_at->diffForHumans() }}
             </div>
             <p class="text-gray-300 leading-relaxed">
                 {{$post['body']}}
