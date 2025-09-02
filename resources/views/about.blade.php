@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot:title>About</x-slot:title>
+    <x-slot:title>{{$title}}</x-slot:title>
 
     <div class="container mx-auto px-4 py-12 text-center">
         <h5 class="text-xl text-white">

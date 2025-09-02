@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot:title>Blog</x-slot:title>
+    <x-slot:title>{{ $title }}</x-slot:title>
 
     <div class="container mx-auto px-4 py-12 space-y-8">
         @foreach ($posts as $post)
@@ -8,7 +8,7 @@
                 <h2 class="text-2xl font-bold text-white mb-3 hover:text-amber-200 hover:underline">{{ $post['title'] }}</h2>
             </a>
             <div class="text-white">
-                <a href="#" class="text-white">{{ $post['author'] }}</a> | {{ $post->created_at->diffForHumans() }}
+                <a href="/authors/{{ $post->author->id }}" class="text-white hover:underline">{{ $post->author->name }}</a> | {{ $post->created_at->diffForHumans() }}
             </div>
             <p class="text-gray-300 leading-relaxed">
                 {{ Str::limit($post['body'], 100) }}

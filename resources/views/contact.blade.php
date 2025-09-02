@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot:title>Contact</x-slot:title>
+    <x-slot:title>{{$title}}</x-slot:title>
 
     <div class="container mx-auto px-4 py-12 text-center">
         <h5 class="text-xl font-semibold text-white mb-6">You can find me on</h5>
