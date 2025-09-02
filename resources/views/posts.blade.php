@@ -8,7 +8,7 @@
                 <h2 class="text-2xl font-bold text-white mb-3 hover:text-amber-200 hover:underline">{{ $post['title'] }}</h2>
             </a>
             <div class="text-white">by
-                <a href="/authors/{{ $post->author->id }}" class="text-amber-200 hover:underline">{{ $post->author->name }}</a>  in
+                <a href="/authors/{{ $post->author->username }}" class="text-amber-200 hover:underline">{{ $post->author->name }}</a>  in
                 <a href="/categories/{{ $post->category->slug }}" class="text-amber-500  hover:underline">{{ $post->category->name }}</a> 
                 | {{ $post->created_at->diffForHumans() }}
             </div>

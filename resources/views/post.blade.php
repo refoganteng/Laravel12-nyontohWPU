@@ -5,7 +5,7 @@
         <article class="bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition">
                 <h2 class="text-2xl font-bold text-white mb-3">{{ $post['title'] }}</h2>
             <div class="text-white">by
-                <a href="/authors/{{ $post->author->id }}" class="text-amber-200 hover:underline">{{ $post->author->name }}</a>  in
+                <a href="/authors/{{ $post->author->username }}" class="text-amber-200 hover:underline">{{ $post->author->name }}</a>  in
                 <a href="/categories/{{ $post->category->slug }}" class="text-amber-500  hover:underline">{{ $post->category->name }}</a> 
                 | {{ $post->created_at->diffForHumans() }}
             </div>

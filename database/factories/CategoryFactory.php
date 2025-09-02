@@ -23,4 +23,4 @@ class CategoryFactory extends Factory
             'slug' => Str::slug($name),
         ];
     }
-}
+};
