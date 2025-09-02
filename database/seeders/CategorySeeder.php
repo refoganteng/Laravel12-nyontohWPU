@@ -15,19 +15,23 @@ class CategorySeeder extends Seeder
     {
         Category::create([
             'name' => 'Zona integritas',
-            'slug' => 'zona-integritas'
+            'slug' => 'zona-integritas',
+            'color' => 'zi',
         ]);
         Category::create([
             'name' => 'Subbag Umum',
-            'slug' => 'subbag-umum'
+            'slug' => 'subbag-umum',
+            'color' => 'um',
         ]);
         Category::create([
             'name' => 'Sosial',
-            'slug' => 'sosial'
+            'slug' => 'sosial',
+            'color' => 'so',
         ]);
         Category::create([
             'name' => 'Statistik Sektoral',
-            'slug' => 'statistik0-sektoral'
+            'slug' => 'statistik-sektoral',
+            'color' => 'ss',
         ]);
     }
 }
