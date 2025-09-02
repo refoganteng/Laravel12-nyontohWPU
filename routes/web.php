@@ -13,7 +13,8 @@ Route::get('/', function () {
 Route::get('/posts', function () {
     return view('posts', [
         'title' => 'All Articles',
-        'posts' => Post::all()
+        'posts' => Post::latest()->get(),
+        // 'posts' => Post::with(['author', 'category'])->latest(),->get(),
     ]);
 });
 
@@ -33,7 +34,7 @@ Route::get('/authors/{user:username}', function (User $user) {
 
 Route::get('/categories/{category:slug}', function (Category $category) {
     return view('posts', [
-        'title' => count($category->posts) . " Articles in ". $category->name,
+        'title' => count($category->posts) . " Articles in " . $category->name,
         'posts' => $category->posts,
     ]);
 });
