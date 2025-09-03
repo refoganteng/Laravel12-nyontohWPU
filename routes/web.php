@@ -13,8 +13,7 @@ Route::get('/', function () {
 Route::get('/posts', function () {
     return view('posts', [
         'title' => 'All Articles',
-        'posts' => Post::latest()->get(),
-        // 'posts' => Post::with(['author', 'category'])->latest(),->get(),
+        'posts' => Post::filter()->latest()->get(),
     ]);
 });
 
